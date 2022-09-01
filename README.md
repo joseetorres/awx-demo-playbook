@@ -1,5 +1,3 @@
-#AWX Demo
-
 Role Name
 =========
 
