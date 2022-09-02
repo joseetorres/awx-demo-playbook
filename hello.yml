@@ -3,7 +3,7 @@
   hosts: all
   tasks:
     - name: Hello Message
-        lineinfile:
+      lineinfile:
         path: /tmp/hello.txt
         regexp: '^Hello'
         line: Hello World, I'm Automated!
