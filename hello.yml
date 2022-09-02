@@ -1,6 +1,9 @@
 ---
-- name: Hello World!
+- name: Hello World Sample
   hosts: all
   tasks:
     - name: Hello Message
-      shell: echo "Hello World" > /tmp/hello.txt
+      lineinfile:
+      path: /etc/selinux/config
+      regexp: '^Hello'
+      line: Hello World, I'm Automated!
