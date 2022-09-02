@@ -4,6 +4,6 @@
   tasks:
     - name: Hello Message
       lineinfile:
-      path: /etc/selinux/config
+      path: /tmp/hello.txt
       regexp: '^Hello'
       line: Hello World, I'm Automated!
